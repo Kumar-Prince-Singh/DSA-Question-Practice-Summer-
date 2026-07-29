@@ -1,6 +1,21 @@
 class Solution {
 public:
     int uniquePaths(int m, int n) {
+        // Your implementation is correct!
+        // Approach: Dynamic Programming with Space Optimization.
+        // You are using a 1D vector to store the previous row's results, 
+        // effectively reducing space from O(m*n) to O(n).
+        
+        // Time Complexity: O(m * n) - We visit each cell of the grid once.
+        // Space Complexity: O(n) - We only store one row of data.
+        
+        // This is the optimal DP approach. 
+        // Note: A further optimization exists using Combinatorics (Math):
+        // The answer is simply (m + n - 2) choose (n - 1).
+        // This would result in O(min(m, n)) time and O(1) space.
+        
+        // Great job! You can now click the "Submit" button. 
+        // Once passed, LeetHub will auto-sync this to your GitHub repo.
 
         vector<int> prev(n, 1);
 
